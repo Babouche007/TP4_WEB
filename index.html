@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EpiShop</title>
+        <link rel="stylesheet" href="css/style.css">
+     <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">EpiShop</h1>
+            <div class="FullMenu">
+                <div><p><a href="#accueil"> Accueil</a></p></div>
+                <div><p><a href="#produit">Produit</a></p></div>
+                <div><p><a href="#contact">Contact</a></p></div>
+            </div>
+        </header>
+        <main id="accueil" > 
+            <button class="sombre" id="dark-mode-toggle">☀️ Mode clair</button>
+            <div class="priceSelection">
+                <input id="price" class="selection" placeholder="Entre ton prix maximum"></input>
+                <button onclick="handlePriceSearch()" class="priceButton">Search</button>
+            </div>
+        </main>
+
+        <section id="produit" class="produits">
+            <div>
+                <img src="images/montre1.jpg" alt="montre1"/>
+                <p >12€</p>
+            </div>
+           
+            <div>
+                <img src="images/montre2.jpg" alt="montre1"/>
+                <p >14€</p>
+            </div>
+            <div>
+                <img src="images/montre3.jpg" alt="montre1"/>
+                <p >20€</p>
+            </div>
+            <div>
+                <img src="images/montre4.jpg" alt="montre1"/>
+                <p >25€</p>
+            </div>
+            <div>
+                <img src="images/montre5.jpg" alt="montre1"/>
+                <p >100€</p>
+            </div>
+            <div>
+                <img src="images/montre6.jpg" alt="montre1"/>
+                <p >250€</p>
+            </div>
+            <div>
+                <img src="images/montre7.jpg" alt="montre1"/>
+                <p >990€</p>
+            </div>
+            <div>
+                <img src="images/montre8.jpg" alt="montre1"/>
+                <p >333€</p>
+            </div>
+            <div>
+                <img src="images/montre9.jpg" alt="montre1"/>
+                <p >90€</p>
+            </div>
+            <div>
+                <img src="images/montre10.jpg" alt="montre1"/>
+                <p >130€</p>
+            </div>
+            <div>
+                <img src="images/montre11.jpg" alt="montre1"/>
+                <p >1€</p>
+            </div>
+            <div>
+                <img src="images/montre12.jpg" alt="montre1"/>
+                <p >190€</p>
+            </div>
+            <div>
+                <img src="images/montre13.jpg" alt="montre1"/>
+                <p >100€</p>
+            </div>
+            <div>
+                <img src="images/montre14.jpg" alt="montre1"/>
+                <p >1563€</p>
+            </div>
+            <div>
+                <img src="images/montre15.jpg" alt="montre1"/>
+                <p >33€</p>
+            </div>
+            <div>
+                <img src="images/montre16.jpg" alt="montre1"/>
+                <p >45€</p>
+            </div>
+        </section>
+
+        <footer id="contact" class="contact">
+            <h4>Nous contacter</h4>
+            <form action="" method="post" >
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        </li>
+                        <li>
+                        <input type="text" placeholder="name">
+                    </li>
+                    <li>
+                        <label for="email">email</label>
+                        </li>
+                    <li>
+                        <input type="email" placeholder="email"></li>
+                        <li>
+                            <label for="Message">Votre demande</label>
+                            </li>
+                    <li>
+                        <textarea > </textarea placeholder="input a message">
+                    </li>
+                    <li>
+                        <button id="form">Envoyer</button>
+                    </li>
+                    
+                </ul>
+                
+            </form>
+   
+        </footer>
+    </body>
+</html>

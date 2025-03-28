@@ -1,0 +1,153 @@
+html,body {
+    margin: 0;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.priceSelection {
+    width: 500px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 2%;
+}
+
+.price {
+    width: 20%;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.produits {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 16px; 
+    padding: 16px;
+}
+
+.produits img{
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.produits div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    border-bottom-style: solid;
+    border-bottom-color: grey;
+    border-bottom-width: .5px;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+}
+
+.logo {
+    height: 100%;
+    width: 70%;
+    margin: 0;
+    text-align: left;
+    padding-left: 5%;
+}
+
+header div {
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header div div{
+    height: 100%;
+    width: 33%;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+header div div:hover {
+    background-color: #e0e0e0;
+}
+
+.FullMenu {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .FullMenu {
+        display: none;
+    }
+}
+
+
+.contact {
+   
+    width: 550px;
+    height: auto;
+    bottom: 0;
+    position: static; /* Changé de absolute à relative */
+    font-size: 18px; /* Ajouté pour agrandir le texte */
+    padding: 20px 20px 20px 20px;
+    margin: auto; 
+    flex:1;
+}
+
+ul {
+    list-style-type: none;/* Suppression des puces par défaut */
+    margin-bottom: 25px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    font-size: 16px;
+}
+
+.produit{
+    flex: 2;
+}
+
+.dark-mode {
+    
+    background-color: #121212;
+    color: #ffffff;
+    button {
+        background-color: darkgray;
+        color: #ffffff;
+    }
+   a {
+    color: #ffffff;
+   }
+  
+   }
+   .dark-mode header,
+   .dark-mode nav,
+   .dark-mode section,
+   .dark-mode footer {
+    background-color: #1e1e1e;
+   }
+   button {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+   }
